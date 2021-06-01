@@ -9,13 +9,27 @@ $partite = [
     ],
 
     [
-        "home" => "Virtus-Roma",
-        "visitors" => "Benetton-treviso",
+        "home" => "	Fortitudo Bologna",
+        "visitors" => "Reyer Venezia",
         "puntiHome" => 68,
         "puntiVisitors" => 56,
     ],
 
-    "test" => "ciao"
+    [
+        "home" => "Mens Sana Siena",
+        "visitors" => "	V.L. Pesaro",
+        "puntiHome" => 59,
+        "puntiVisitors" => 47,
+    ],
+
+    [
+        "home" => "Olimpia Milano",
+        "visitors" => "Benetton-treviso",
+        "puntiHome" => 87,
+        "puntiVisitors" => 66,
+    ],
+
+    
 ];
 
 ?>
@@ -39,7 +53,7 @@ $partite = [
             $testoFinale = "";
 
             $squadre = $partitaCorrente["home"] ." - ". $partitaCorrente["visitors"];
-            $punti = $partitaCorrente["home"] ." - ". $partitaCorrente["visitors"];
+            $punti = $partitaCorrente["puntiHome"] ." - ". $partitaCorrente["puntiVisitors"];
 
             $testoFinale = $squadre . " - " . $punti;
 
